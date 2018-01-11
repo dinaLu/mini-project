@@ -1,0 +1,49 @@
+﻿<Window x:Class="PLWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Label x:Name="nannyAgencyLabel" Content="Nanny Agency" Grid.Row="0"/>
+        </Grid>
+        <Grid Grid.Row ="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="motherLabel"  Content="Mother" Grid.Row="0"/>
+            <Button x:Name="addMotherButton" Content="Add Mother" Grid.Row="1" Click="addMotherButton_click"/>
+            <Button x:Name="updateMotherButton" Content="Update Mother" Grid.Row="2" Click="updateMotherButton_click"/>
+            <Button x:Name="removeMotherButton" Content="Remove Mother" Grid.Row="3" Click="removeMotherButton_click"/>
+            <Label x:Name="childLabel"  Content="Child" Grid.Column="1" Grid.Row="0"/>
+            <Button x:Name="addChildButton" Content="Add Chlid" Grid.Column="1" Grid.Row="1" Click="addChildButton_click"/>
+            <Button x:Name="updateChildButton" Content="Update Child" Grid.Column="1" Grid.Row="2" Click="updateChildButton_click"/>
+            <Button x:Name="removeChildButton" Content="Remove Child" Grid.Column="1" Grid.Row="3" Click="removeChildButton_click"/>
+            <Label x:Name="nannyLabel"  Content="Nanny" Grid.Column="2" Grid.Row="0"/>
+            <Button x:Name="addNannyButton" Content="Add Nanny" Grid.Column="2" Grid.Row="1" Click="addNannyButton_click"/>
+            <Button x:Name="updateNannyButton" Content="Update Nanny" Grid.Column="2" Grid.Row="2" Click="updateNannyButton_click"/>
+            <Button x:Name="removeNannyButton" Content="Remove Nanny" Grid.Column="2" Grid.Row="3" Click="removeNannyButton_click"/>
+            <Label x:Name="contractLabel"  Content="Contract" Grid.Column="3" Grid.Row="0"/>
+            <Button x:Name="addContractButton" Content="Add Contract" Grid.Column="3" Grid.Row="1" Click="addContractButton_click"/>
+            <Button x:Name="updateContractButton" Content="Update Contract" Grid.Column="3" Grid.Row="2" Click="updateContractButton_click"/>
+            <Button x:Name="removeContractButton" Content="Remove Contract" Grid.Column="3" Grid.Row="3" Click="removeContractButton_click"/>
+
+        </Grid>
+    </Grid>
+</Window>
